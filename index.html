@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+  <title>Happy 25 Goubabu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background:#0b0b10;color:white;font-family:Arial;padding:30px;">
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  .grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  body { padding: 16px; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .cake { font-size: 38px; }
+}
+
+  }
+
+@keyframes flicker {
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.05); opacity: 0.85; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.cake {
+  font-size: 48px;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.candle {
+  display: inline-block;
+  animation: flicker 0.8s infinite alternate;
+}
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+</style>
+
+
+  <h1>Happy 25th 💛</h1>
+<div class="cake">
+  🎂 <span class="candle">🕯️</span><span class="candle">🕯️</span><span class="candle">🕯️</span>
+</div>
+
+
+  <p style="line-height:1.8;">
+    A little effort just to make you feel special and seen.<br><br>
+
+    Happyy 25th <b>Goubabuuu</b> 💛<br>
+    It’s been 3 years since we got to know each other.<br>
+    You didn’t just enter my life, you became a part of it in ways I never expected.<br><br>
+
+    Love uuhh,<br>
+    <b>Barrelu</b>
+  </p>
+
+  <h2>Our Memories</h2>
+<div class="grid">
+
+
+  <img src="photos/1.JPG">
+  <img src="photos/2.JPG">
+  <img src="photos/3.JPG">
+  <img src="photos/4.JPG">
+  <img src="photos/5.JPG">
+  <img src="photos/6.JPG">
+  <img src="photos/7.JPG">
+  <img src="photos/8.JPG">
+  <img src="photos/9.JPG">
+  <img src="photos/10.JPG">
+  <img src="photos/11.JPG">
+  <img src="photos/12.JPG">
+  <img src="photos/13.JPG">
+  <img src="photos/14.JPG">
+  <img src="photos/15.JPG">
+  <img src="photos/16.JPG">
+  <img src="photos/17.JPG">
+  <img src="photos/18.JPG">
+  <img src="photos/19.JPG">
+  <img src="photos/20.JPG">
+  <img src="photos/21.JPG">
+  <img src="photos/22.JPG">
+  <img src="photos/23.JPG">
+  <img src="photos/24.JPG">
+  <img src="photos/25.JPG">
+</div>
+<h2 style="margin-top:50px;">25 Reasons that i love 💛</h2>
+
+<div id="dialogueBox" style="
+  margin-top:20px;
+  padding:22px;
+  border-radius:14px;
+  background:rgba(255,255,255,0.06);
+  min-height:140px;
+  line-height:1.7;
+  white-space:pre-line;
+">
+  Click below when you’re ready.
+</div>
+
+<button onclick="nextDialogue()" style="
+  margin-top:15px;
+  padding:10px 20px;
+  border-radius:10px;
+  border:none;
+  background:#ffcc00;
+  color:#000;
+  font-size:14px;
+  cursor:pointer;
+">
+  Next
+</button>
+<div style="margin-top:80px; text-align:center;">
+
+  <div id="envelope" onclick="openLetter()" style="
+    cursor:pointer;
+    display:inline-block;
+    padding:20px 30px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.06);
+    transition:transform 0.3s ease;
+  ">
+    <div style="font-size:48px;">✉️</div>
+    <div style="margin-top:8px; opacity:0.85;">
+      This is for you
+    </div>
+  </div>
+
+  <div id="letter" style="
+    display:none;
+    margin:40px auto 0 auto;
+    padding:34px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.05);
+    max-width:720px;
+    line-height:1.9;
+    text-align:left;
+  ">
+    <h2>A Letter for You 💛</h2>
+
+    <p>
+      Happy birthday to my best friend of my life.<br><br>
+
+      You are very special to me, and on this day you deserve to know that I love you more than anyone else.
+      I’m really glad that we met and that we became best friends.<br><br>
+
+      I know you don’t like big words or loud emotions, but I want you to know this clearly.
+      You don’t have to prove anything to anyone.
+      You don’t have to carry everything alone.<br><br>
+
+      You are doing more than enough, even on the days it doesn’t feel like it.<br><br>
+
+      No matter how life changes, how busy it gets, or how heavy things feel,
+      this place, this bond, and I will always be here for you.<br><br>
+
+      I hope this year is kinder to you.
+      I hope it gives you peace, growth, and moments where you can finally breathe.<br><br>
+
+      You don’t have to say anything.
+      I just wanted you to have this.<br><br>
+
+      Love you so much,<br>
+      <b>Barrelu</b> 💛
+    </p>
+  </div>
+
+</div>
+
+
+
+
+</body>
+<script>
+  // PASSWORD
+  const PASSWORD = "goubabu";
+  const entered = prompt("🔒 Enter password barrelu 💛");
+
+  if (entered !== PASSWORD) {
+    document.body.innerHTML = `
+      <div style="
+        background:#0b0b10;
+        color:white;
+        font-family:Arial;
+        min-height:100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        padding:30px;">
+        <div>
+          <div style="font-size:48px;">🎂🔒</div>
+          <h2>Wrong password</h2>
+          <p style="opacity:0.8;">Hint: what I call u cutely when more love comes 💛</p>
+        </div>
+      </div>`;
+    throw new Error("Wrong password");
+  }
+
+  // REASONS
+  const dialogues = [
+`You never made me feel like I was under pressure, especially with money or life.
+No matter if it was 5 am or 12 am, I could ask you freely.
+You never made things feel tough, and that safety meant everything to me.`,
+
+`I’ve watched how you work through hard times without searching for excuses.
+You stay up late, wake up early, and keep going quietly.
+That strength and responsibility is something I’ve never seen in anyone else.`,
+
+`When I’m with you, I feel complete.
+We fight, laugh, irritate each other, but nothing ever feels heavy for long.
+With you, happiness feels natural and effortless.`,
+
+`Even when people hurt you deeply, you don’t carry it with you.
+You don’t dig into the past or hold grudges.
+You choose peace silently, and that strength is rare.`,
+
+`For even the smallest things in my life, family or personal, you are my first person.
+I don’t need big words or reactions from you.
+Just knowing I can tell you everything feels enough.`,
+
+`Even when we fight badly, you never let the bond break.
+No matter the silence, blocking, or distance, things always find their way back to calm.
+That consistency makes me feel secure.`,
+
+`I feel safe knowing this bond won’t break easily.
+Days don’t pass without us talking, even when things aren’t perfect.
+Nothing in life is permanent, but my presence with you is constant.`,
+
+`Our days are never boring.
+We fight, tease, irritate each other, and still laugh like nothing happened.
+Your presence changes the vibe without you even noticing.`,
+
+`You changed the way I look at effort and responsibility.
+From you, I learned consistency, hard work, and not giving up easily.
+Those lessons stayed with me more than you know.`,
+
+`You make me feel chosen through actions, not words.
+Checking if I ate, bringing food during shifts, caring quietly.
+Those small things made me feel important.`,
+
+`I deeply admire how you treat people.
+You make others feel seen, especially when they feel hurt or uncomfortable.
+That comfort you create naturally is rare.`,
+
+`You support me even before I ask.
+When I hesitate, you step in on your own, no questions asked.
+Time, effort, even money, you never think twice.`,
+
+`With you, I feel calm, safe, and complete.
+Sometimes I can’t even sleep until you’re there.
+The moment I see you beside me, my mind rests.`,
+
+`Even when things bother you, you don’t show irritation.
+You stay calm and present instead of reacting.
+That quiet patience makes everything lighter for me.`,
+
+`I trust you without needing reasons.
+I share even the smallest doubts and decisions with you.
+You always find solutions when others can’t.`,
+
+`The names we call each other say everything.
+Bandaluuu, Barrelu, Bujji Konda.
+They carry comfort and closeness only we understand.`,
+
+`I know that when things get bad, you will be there.
+Not with big promises, but with presence.
+Even when things are out of our control, we stand together.`,
+
+`You understand me without words.
+You notice my silence, my mood, my happiness, my sadness just by looking.
+Without making it heavy, you make me laugh within minutes.`,
+
+`You feel deeply but never show it loudly.
+You observe more than you speak and carry things silently.
+That depth is something only people close to you see.`,
+
+`You don’t seek attention, but your presence changes everything.
+When you’re around, things feel calmer and lighter.
+That quiet impact is powerful.`,
+
+`You are emotionally independent in a rare way.
+You don’t need validation or reassurance.
+You know who you are, and that confidence shows.`,
+
+`You process emotions internally before reacting.
+You don’t panic or rush feelings.
+That self-control makes you strong in chaos.`,
+
+`You care deeply, but you show it through actions.
+Showing up, helping, staying.
+That is your language, and it’s intentional.`,
+
+`You become strongest when life gets hardest.
+In comfort, you stay quiet.
+In chaos, you become steady and focused.`,
+
+`You don’t need to be understood by everyone.
+You’re okay being misunderstood by most, as long as a few truly see you.
+I see you, and that matters to me.`
+  ];
+let dIndex = 0;
+  window.nextDialogue = function () {
+    document.getElementById("dialogueBox").innerText =
+      dialogues[dIndex++] || "That’s all. You don’t have to say anything 💛";
+  };
+
+  // CONFETTI
+  const colors = ["#ffcc00", "#ff6699", "#66ccff", "#99ff99", "#ffffff"];
+  for (let i = 0; i < 60; i++) {
+    const c = document.createElement("div");
+    c.className = "confetti";
+    c.style.left = Math.random() * 100 + "vw";
+    c.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    c.style.animationDuration = Math.random() * 3 + 3 + "s";
+    document.body.appendChild(c);
+  }
+function openLetter() {
+  document.getElementById("envelope").style.display = "none";
+  const letter = document.getElementById("letter");
+  letter.style.display = "block";
+  letter.scrollIntoView({ behavior: "smooth" });
+}
+
+</script>
+</html>
